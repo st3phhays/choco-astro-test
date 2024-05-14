@@ -4,18 +4,15 @@
   "type": "module",
   "version": "0.1.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "yarn choco-theme && npx astro dev",
+    "start": "npx astro dev",
+    "build": "yarn choco-theme && npx astro check && npx astro build",
+    "preview": "npx astro preview",
+    "astro": "npx astro",
+    "choco-theme": "npx --quiet ts-node --skipIgnore node_modules/choco-theme/build/choco-theme.ts --repository=docs"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/sitemap": "^3.1.4",
-    "astro": "^4.8.3",
-    "remark-custom-header-id": "^0.1.0",
-    "typescript": "^5.4.5"
+    "choco-astro": "https://github.com/st3phhays/choco-astro#astro",
+    "choco-theme": "https://github.com/st3phhays/choco-theme#astro"
   }
 }
