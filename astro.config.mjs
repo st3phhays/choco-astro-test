@@ -6,6 +6,8 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://st3phhays.github.io',
+    base: 'choco-astro-test',
     markdown: {
         syntaxHighlight: false, // Temporarily disable syntax highlighting and rely on Prism.js via choco-theme
         remarkPlugins: [
