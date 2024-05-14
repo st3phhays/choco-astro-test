@@ -1,0 +1,18 @@
+{
+  "name": "choco-astro",
+  "packageManager": "yarn@4.2.2",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "yarn choco-theme && npx astro dev",
+    "start": "npx astro dev",
+    "build": "yarn choco-theme && npx astro check && npx astro build",
+    "preview": "npx astro preview",
+    "astro": "npx astro",
+    "choco-theme": "npx --quiet ts-node --skipIgnore node_modules/choco-theme/build/choco-theme.ts --repository=docs"
+  },
+  "dependencies": {
+    "choco-astro": "https://github.com/st3phhays/choco-astro#astro",
+    "choco-theme": "https://github.com/st3phhays/choco-theme#astro"
+  }
+}
